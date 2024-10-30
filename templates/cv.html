@@ -1,0 +1,21 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ada</title>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ cv.ad }}</h1>
+        <img src="{{ cv.fotoğraf.url }}" alt="Profile Picture">
+        <h3>hakkımda</h3>
+        <p>{{ cv.Biyografi }}</p>
+        <h3>Deneyim</h3>
+        <p>{{ cv.Deneyim }}</p>
+        <h3>  eğitim_durumu</h3>
+        <p>{{ cv.eğitim_durumu }}</p>
+    </div>
+</body>
+</html>
